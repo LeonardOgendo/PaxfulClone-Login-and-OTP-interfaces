@@ -1,0 +1,1 @@
+web gunicorn Paxful.wsgi:application --log-file -

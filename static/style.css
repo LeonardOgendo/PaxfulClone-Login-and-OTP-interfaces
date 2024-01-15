@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans,Tajawal,sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+.col-2
+{
+    margin: 15px;
+}
+
+#login-form
+{
+    margin-top: 25px;
+}
+#input-field
+{
+    margin-top: 5px;
+    padding-left: 10px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #cac6c6;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.input-field2
+{
+    margin-top: 5px;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #cac6c6;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+#passwd
+{
+    width: 360px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 7px;
+    background: rgb(233, 241, 248);
+    border: none;
+    border-radius: 5px;
+}
+.toggle-password
+{
+    margin-left: 5px;
+}
+.toggle-password i
+{
+    font-size: 14px;
+    color: #706f6f;
+}
+input:focus
+{
+    outline: none;
+    border: none;
+}
+#login-btn
+{
+    color: #fff;
+    text-align: left;
+    padding-left: 10px;
+    width: 400px;
+    height: 47px;
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+#login-form p
+{
+    font-weight: bold;
+}
+.form-box
+{
+    width: 100%;
+    display: flex;
+    margin-left: 15px;
+    
+}
+.box2
+{
+    margin-top: 45px;
+    margin-left: 202px;
+    
+    
+}
+#reg-p
+{
+    color: #413f3f;
+    font-size: 13px;
+    font-weight: 350;
+}
+#reg-p a{
+    text-decoration: none;
+    font-size: 14px;
+    color: blue;
+    font-weight: 350;
+    margin-left: 5px;
+}
+#login-ttl
+{
+    color: darkblue;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.form-txts
+{
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #413f3f;
+}
+#f-pass
+{
+    text-decoration: none;
+    margin-left: 182px;
+    font-size: 14px;
+    color: blue;
+    font-weight: 350;
+}
+.info
+{
+    display: flex;
+    border: 1px solid rgb(209, 217, 226);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    width: 400px;
+    background: #f4fafd;
+}
+#info-circle
+{
+    width: 10px;
+    height: 15px;
+    margin: 0;
+    color: #457bcc;
+}
+.col-3
+{
+    margin: 7px;
+}
+
+#info-p
+{
+    font-size: 10px;
+    margin: 0;
+    color: #413f3f;
+    font-weight: 300;
+}
+#info-p2
+{
+    font-size: 11px;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid #777;
+    border-radius: 3px;
+}
+#hr1
+{
+    width: 400px; 
+    margin-bottom: 15px; 
+    color: #cac6c6;
+}
+
+.col-2
+{
+    flex-basis: 40%;
+}
+.col-22
+{
+    flex-basis: 60%;
+    background: #faf9f7;
+}
+.col-22 img
+{
+    margin-top: 70px; margin-left: 55px;
+}
+#restof-link
+{
+    font-weight: 600;
+    color: #000;
+}
+#select-ln
+{
+    border: none;
+    background: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#ln-icon
+{
+    margin: 8px 3px 3px 3px;
+}
+.img-container
+{
+    display: flex;
+    border: 1px solid #cac6c6;
+}
+.col-23
+{
+    flex-basis: 60%;
+    background: rgb(67, 20, 121);
+}
+
+/* Otp-interface.html styling*/
+#second-bg
+{
+    margin: 10px 0 0 0;
+}
+.col-2b
+{
+    margin: 25px 15px 15px 23px;
+    flex-basis: 40%;
+}
+.box2b
+{
+    margin-top: 40px;
+    margin-left: 240px;
+     
+}
+#opt
+{
+    background-color: green;
+}
+.form-boxb
+{
+    width: 100%;
+    display: flex;
+}
+.box1
+{
+    margin-left: 20px;
+}
+#login-confmttl
+{
+    color: #222020;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#code-p
+{
+    font-weight: 380;
+    color: #252323;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#trouble-a
+{
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+#otp-form
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.input-box
+{
+    width: 50px;
+    height: 45px;
+    margin-right: 7px;
+    border: 1px solid #cac6c6;
+    border-radius: 5px;
+}
+#resend-code
+{
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+#app-sources
+{
+    display: flex;
+}
+
+
+#app-store
+{
+    width: 170px;
+    height: 61px;
+    margin-top: 3px;
+}
+#play-store
+{
+    width: 160px;
+}
+#alt-header
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #222020;
+    margin-bottom: 10px;
+}
+#authy-p
+{
+    font-weight: 380;
+    color: #252323;
+    font-size: 14px;
+}
+#authy-p a
+{
+    text-decoration: none;
+    color: blue;
+}
+.authy-source
+{
+    margin-top: 22px;
+    border: 1px solid rgb(209, 217, 226);
+    background: #f4fafd;
+    width: 400px;
+    margin-bottom: 15px ;
+    border-radius: 5px;
+}
+#authy-block
+{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#authy-install
+{
+    color: #222020;
+    text-align: left;
+    padding-left: 15px;
+    width: 350px;
+    height: 47px;
+    margin-left: 15px;
+    border: 1px solid #cac6c6;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 450;
+}
+#install-i
+{
+    margin-left: 170px;
+}
+#backto-login
+{
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+#chevron-left
+{
+    color: dodgerblue;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+/* redirecr style */
+.redirect
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+#browser-check
+{
+    margin-bottom: 0;
+}
+
+#check-p
+{
+    margin-top: 8px;
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+#check-p2
+{
+    margin-top: 3px;
+    margin-left: 250px;
+    margin-bottom: 0;
+}
+#check-p3
+{
+    margin-top: 30px;
+    margin-left: 280px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+#cloud-f
+{
+    color: rgb(12, 118, 224);
+    text-decoration: none;
+    margin-left: 4px;
+}
+#ray-id
+{
+    margin-left: 285px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+#ray
+{
+    font-size: 13px; 
+    margin-left:3px;
+}
+.brk
+{
+    display: none;
+}
+
+.loader::after
+{
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 15px solid #dddddd;
+    border-top-color: rgb(133, 168, 202);
+    margin-left: 45%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    animation: loading 0.75s ease infinite;
+}
+@keyframes loading{
+    from{ transform: rotate(0turn);}
+    to{ transform: rotate(1turn);}
+}
+#ln-break
+{
+    display: none;
+}
+
+/*Responsiveness*/
+@media (max-width: 768px){
+    body
+    {
+        display: block;
+    }
+    .col-2
+    {
+        margin: 0;
+    }
+
+    #login-form
+    {
+        margin-top:3px;
+    }
+    #input-field
+    {
+        width: 305px;
+        height: 45px;
+    }
+    .input-field2
+    {
+        width: 305px;
+        height: 45px;
+    }
+    #passwd
+    {
+        width: 270px;
+        margin-top: 7px;
+        background: none;
+    }
+    .toggle-password
+    {
+        margin-left: 3px;
+    }
+    .toggle-password i
+    {
+        font-size: 13px;
+    }
+    
+    #login-btn
+    {
+        width: 305px;
+        height: 45px;
+    }
+    .form-box
+    {
+        margin-left: 0;
+    }
+    .box2
+    {
+        margin-top: 40px;
+        margin-left: 105px;
+    }
+    #reg-p
+    {
+        font-size: 12px;
+    }
+    #reg-p a
+    {
+        font-size: 13px;
+    }
+    .form-txts
+    {
+        font-size: 13px;
+    }
+    .info
+    {
+        width: 310px;
+        flex-wrap: wrap;
+    }
+    #info-p2
+    {
+        margin-left: 15px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    #info-p
+    {
+        width: 250px;
+        margin-top: 5px;
+    }
+    #info-circle
+    {
+        margin-top: 5px;
+    }
+    #info-p br
+    {
+        display: none;
+    }
+    #f-pass
+    {
+        margin-left: 115px;
+        font-size: 13px;
+        font-weight: 370;
+    }
+    .col-22
+    {
+        display: none;
+    }
+    #hr1
+    {
+        width: 305px;
+    }
+    #login-btn
+    {
+        padding-top: 12px;
+    }
+
+    /*otp interface*/
+    .col-23
+    {
+        display: none;
+    }
+    .col-2b
+    {
+        margin: 0;
+    }
+    .box2b
+    {
+        margin-left: 120px;
+    }
+    .input-box
+    {
+        margin-right: 2px;
+        width: 45px;
+        height: 40px;
+    }
+    #ln-break
+    {
+        display: inline;
+    }
+    #ln-break2
+    {
+        display: none;
+    }
+    .authy-source
+    {
+        width: 315px;
+    }
+    #alt-header
+    {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #app-col, #app-col2
+    {
+        flex-basis: 50%;
+        width: 100%;
+    }
+    #play-store
+    {
+        width: 140px;
+        height: 59px;
+    }
+    #app-store
+    {
+        width: 145px;
+        height: 58px;
+    }
+    #authy-install
+    {
+        width: 280px;
+    }
+    #install-i
+    {
+        margin-left: 108px;
+    }
+    /*redirect*/
+    .redirect
+    {
+        display: block;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    #browser-check
+    {
+        font-size: 18px;
+        text-align: center;
+    }
+    #check-p
+    {
+        text-align: center;
+        margin-right: 72px;
+        font-size: 14px;
+    }
+    .brk
+    {
+        display: inline;
+    }
+    #check-p2
+    {
+        margin-left: 10px;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    #check-p3
+    {
+        margin-left: 10px;
+        text-align: center;
+    }
+    #ray-id
+    {
+        margin-left: 75px;
+
+    }
+    #ray
+    {
+        font-size: 12px;
+    }
+    .loader::after
+    {
+        margin-left: 40%;
+        width: 50px;
+        height: 50px;
+    }
+
+}
